@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="main">
+            <div class="clock section ">
+                <h1 class="time">00:00:00</h1>
+                <div class="dd">
+                    <p class="date">3 August 2026</p>
+                    <p class="day">Monday</p>
+                </div>
+            </div>
+            <div class="stopwatch section hidden">
+                <h1 class="sw-time">00:00:00</h1>
+                <div class="sw-buttons">
+                    <button class="sw-btn" id="startBtn">Start</button>
+                    <button class="sw-btn" id="pauseBtn">Pause</button>
+                    <button class="sw-btn" id="resetBtn">Reset</button>
+                </div>
+            </div>
+            <div class="timer section hidden">
+                <h1>Timer</h1>
+                <div class="timer-inputs">
+                    <input type="number" id="hoursInput" min="0" max="23" placeholder="HH">
+                    <span>:</span>
+                    <input type="number" id="minutesInput" min="0" max="59" placeholder="MM">
+                    <span>:</span>
+                    <input type="number" id="secondsInput" min="0" max="59" placeholder="SS">
+                </div>
+                <h1 class="timer-display">
+                    00:00:00
+                </h1>
+                <div class="timer-buttons">
+                    <button class="t-btn" id="startTimer">Start</button>
+                    <button class="t-btn" id="pauseTimer">Pause</button>
+                    <button class="t-btn" id="resetTimer">Reset</button>
+                </div>
+            </div>
+            <div class="alarm section hidden">
+                <h1>Alarm</h1>
+                <input type="time" id="alarmTime">
+                <div class="alarm-box">
+                    <button id="setAlarm">Set Alarm</button>
+                    <button id="clearAlarm">Clear Alarm</button>
+                </div>
+                <h3 id="alarmStatus">
+                    No alarm set
+                </h3>
+            </div>
+        </div>
+        <div class="sidebar">
+            <button class="s-btn active" id="clock-btn" data-target="clock"> Clock</button>
+            <button class="s-btn" id="stopwatch-btn" data-target="stopwatch">Stopwatch</button>
+            <button class="s-btn" id="timer-btn" data-target="timer">Timer</button>
+            <button class="s-btn" id="alarm-btn" data-target="alarm">Alarm</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 100%;
+    margin-left: 350px;
+}
+
+.time {
+    font-size: 85px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.dd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.day {
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.sw-time {
+    font-size: 85px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.sw-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sw-btn {
+    width: 80px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.timer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:25px;
+}
+
+.timer-inputs{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.timer-inputs input{
+    width:70px;
+    padding:10px;
+    font-size:20px;
+    text-align:center;
+}
+
+.timer-display{
+    font-size:70px;
+}
+
+.timer-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.t-btn {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.timer-buttons button{
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+.alarm{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:25px;
+}
+
+.alarm-box{
+    display:flex;
+    gap:15px;
+}
+
+.alarm input{
+    padding:12px;
+    font-size:18px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.alarm button{
+    padding:12px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* .alarm button:hover{
+    background:#1d1dcb;
+} */
+
+#alarmStatus{
+    color:#555;
+}
+
+.hidden{
+    display:none;
+}
+
+.sidebar {
+    width: 350px;
+    height: 100vh;
+    background-color: #413939;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.s-btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.s-btn:hover {
+    background-color: #2727ffda;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.s-btn.active{
+    background:#2727ff;
+    color:white;
+}
+
+
+
